@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="HK" height="50" width="90">
+        </div>
+        <div class="nav-item"><a href="#about"><button class="nav-button">About</button></a></div>
+        <div class="nav-item"><a href="#skills"><button class="nav-button">Skills</button></a></div>
+        <div class="nav-item"><a href="#contact"><button class="nav-button">Contact</button></a></div>
+    </div>
+
+    <main>
+        <section id="about" class="section hidden-section">
+            <div id="main">
+                <div id="profilePic">
+                    <img src="robotics.jpg" alt="profilePic" height="700" width="600">
+                </div>
+                <div id="intro">
+                    <h2>Hi! I am</h2>
+                    <h1>Hassan Kashif</h1>
+                    <p>Creative, innovative developer as well as graphic designer.</p>
+                    <p>It's my gurantee by working together</p>
+                    <p>System Phaar dein ge.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section hidden-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <img src="html.png" alt="HTML" class="skill-icon">
+                    <div class="skill-detail" data-percent="90">
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="css-3.png" alt="CSS" class="skill-icon">
+                    <div class="skill-detail" data-percent="85">
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="js.png" alt="JavaScript" class="skill-icon">
+                    <div class="skill-detail" data-percent="50">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="illustrator.png" alt="Illustrator" class="skill-icon">
+                    <div class="skill-detail" data-percent="95">
+                        <div class="skill-name">Illustrator</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="photoshop.png" alt="Photoshop" class="skill-icon">
+                    <div class="skill-detail" data-percent="70">
+                        <div class="skill-name">Photoshop</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="Canva-Logo-Design-Platform-Icon-removebg-preview.png" alt="Canva" class="skill-icon">
+                    <div class="skill-detail" data-percent="80">
+                        <div class="skill-name">Canva</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="corel.png" alt="Corel Draw" class="skill-icon">
+                    <div class="skill-detail" data-percent="95">
+                        <div class="skill-name">Corel</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="c-.png" alt="C++" class="skill-icon">
+                    <div class="skill-detail" data-percent="95">
+                        <div class="skill-name">C++</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="sql-file.png" alt="SQL" class="skill-icon">
+                    <div class="skill-detail" data-percent="80">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="Arduino_IDE_logo.svg-removebg-preview.png" alt="Arduino" class="skill-icon">
+                    <div class="skill-detail" data-percent="50">
+                        <div class="skill-name">Arduino</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <img src="robotics-innovation-a-friendly-robot-mascot-symbolizing-advanced-technology-and-automation-in-a-modern-world-vector-removebg-preview.png"
+                        alt="Robotics" class="skill-icon">
+                    <div class="skill-detail" data-percent="70">
+                        <div class="skill-name">Robotics</div>
+                        <div class="skill-bar">
+                            <div class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section hidden-section">
+            <h2>Contact Me</h2>
+            <p>Email: hassankashif@example.com</p>
+            <p>Phone: +92-321-4392271</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillDetails = document.querySelectorAll(".skill-detail");
+
+            skillDetails.forEach(detail => {
+                const fill = detail.querySelector(".skill-fill");
+                const percent = parseInt(detail.getAttribute("data-percent"));
+
+                detail.parentElement.addEventListener("mouseenter", () => {
+                    fill.style.width = percent + "%";
+                    fill.textContent = percent + "%";
+                });
+
+                detail.parentElement.addEventListener("mouseleave", () => {
+                    fill.style.width = "0%";
+                    fill.textContent = "";
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillDetails = document.querySelectorAll(".skill-detail");
+            skillDetails.forEach(detail => {
+                const fill = detail.querySelector(".skill-fill");
+                const percent = parseInt(detail.getAttribute("data-percent"));
+                detail.parentElement.addEventListener("mouseenter", () => {
+                    fill.style.width = percent + "%";
+                    fill.textContent = percent + "%";
+                });
+                detail.parentElement.addEventListener("mouseleave", () => {
+                    fill.style.width = "0%";
+                    fill.textContent = "";
+                });
+            });
+
+            const sections = document.querySelectorAll(".hidden-section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show-section");
+                    } else {
+                        entry.target.classList.remove("show-section");
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
