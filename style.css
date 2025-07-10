@@ -363,3 +363,251 @@ html {
     margin-bottom: 20px;
     font-family: 'FuturaDisplay', sans-serif;
 }
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 16px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 3px;
+        margin-left: -400px;
+    }
+
+    .nav-item {
+        padding: 10px 15px;
+        font-size: 16px;
+        display: none;
+    }
+
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profilePic img {
+        margin-top: -90px;
+        height: auto;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #intro {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    
+    #intro h2 {
+    margin-top: -60px;
+    margin-right: -120px;
+    font-family: 'FuturaDisplay', sans-serif;
+    letter-spacing: 4px;
+    margin-left: -400px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-shadow: #7f7e7e 2px 12px 4px;
+    color: rgb(255, 255, 255);
+}
+
+#intro h1 {
+    font-family: 'signature1', sans-serif;
+    font-size: 100px;
+    margin: 0px 0px 0px 0px;
+    color: rgb(148, 144, 144);
+}
+#intro p {
+    display: none;
+}
+
+
+.hidden-section {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(8px);
+    transition: opacity 1s ease-out, transform 1s ease-out, filter 1s ease-out;
+}
+
+/* When section is visible */
+.show-section {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+.fade-in-left {
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+.fade-in-right {
+    animation: fadeInRight 1s ease-in-out forwards;
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #ffffff;
+    box-shadow: 4px 3px 0 0 #ebebeb44;
+    transition: transform 0.2s;
+    margin: 0 auto;
+}
+.skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 10px;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    /* let it grow */
+    position: relative;
+    /* for alignment safety */
+}
+
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    /* Prevent icon from shrinking */
+}
+
+/* Updated skill detail */
+.skill-detail {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    animation: fadeInUp 1.2s ease-in-out forwards;
+}
+
+
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background: #2c3337;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3a3a46, #d6c3c3);
+    width: 0%;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 8px;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    transition: width 1.5s ease-in-out;
+}
+
+/* Hover Logic */
+.skill-box:hover .skill-detail {
+    display: flex;
+}
+
+
+
+#skills {
+    background-color: black;
+}
+
+#contact {
+    background-color: black;
+}
+
+#skills h2 {
+    font-size: 48px;
+    font-family: cursive;
+    margin-top: -10px;
+}
+
+#contact h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'FuturaDisplay', sans-serif;
+}
+
+}
