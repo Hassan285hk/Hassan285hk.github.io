@@ -363,8 +363,13 @@ html {
     margin-bottom: 20px;
     font-family: 'FuturaDisplay', sans-serif;
 }
+
+
+
+
 @media only screen and (max-width: 600px){
-    body {
+    html,body {
+        overflow-x: hidden;
         font-size: 16px;
         width: 100%;
     }
@@ -375,8 +380,8 @@ html {
     }
 
     #logo {
-        margin-bottom: 3px;
-        margin-left: -350px;
+        margin: 0;
+        text-align: center;
     }
 
     .nav-item {
@@ -391,40 +396,39 @@ html {
     }
 
     #profilePic img {
-        margin-top: -90px;
+        margin-top: -50px;
         height: auto;
         width: 100%;
-        max-width: 600px;
+        max-width: 100%;
     }
 
     #intro {
-        margin-left: 0;
+        margin : 0 auto;
+        padding: 0 10px;
         text-align: center;
     }
 
     
     #intro h2 {
-    margin-top: -60px;
-    margin-right: -400px;
+    
+    text-align: center;
     font-family: 'FuturaDisplay', sans-serif;
     letter-spacing: 4px;
     font-size: 50px;
-    margin-bottom: 10px;
+    margin: 20px 0;
     text-shadow: #7f7e7e 2px 12px 4px;
     color: rgb(255, 255, 255);
 }
 
 #intro h1 {
     font-family: 'signature1', sans-serif;
-    font-size: 100px;
-    margin: 0px 0px 0px 0px;
+    font-size: 480px;
+    margin: 10px 0px 30px 0px;
     color: rgb(148, 144, 144);
 }
 #intro p {
     display: none;
 }
-
-
 .hidden-section {
     opacity: 0;
     transform: translateY(40px);
@@ -515,10 +519,12 @@ html {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     width: 100%;
-    max-width: 1000px;
-    margin-top: 10px;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .skill-box {
