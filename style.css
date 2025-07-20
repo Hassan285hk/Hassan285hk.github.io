@@ -513,6 +513,8 @@ html {
     box-shadow: 4px 3px 0 0 #ebebeb44;
     transition: transform 0.2s;
     margin: 0 auto;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -522,12 +524,6 @@ html {
     margin-top: 10px;
     box-sizing: border-box;
     overflow-x: hidden;
-}
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 10px;
 }
 
 .skill-box {
