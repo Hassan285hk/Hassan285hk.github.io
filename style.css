@@ -396,11 +396,8 @@ html {
         margin-top: -110px;
         height: auto;
         width: 100%;
-        max-width: 100vw;
         box-sizing: border-box;
         margin-top: -90px;
-        height: auto;
-        width: 100%;
         max-width: 600px;
     }
 
