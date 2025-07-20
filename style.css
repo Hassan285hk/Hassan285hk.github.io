@@ -364,7 +364,10 @@ html {
     font-family: 'FuturaDisplay', sans-serif;
 }
 @media only screen and (max-width: 600px){
-    body {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
         font-size: 16px;
     }
 
