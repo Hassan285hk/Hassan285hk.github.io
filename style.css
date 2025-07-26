@@ -363,6 +363,53 @@ html {
     margin-bottom: 20px;
     font-family: 'FuturaDisplay', sans-serif;
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-handles img {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: iconFadeIn 1s forwards;
+}
+
+.social-handles img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    box-shadow: 0 0 25px 5px rgba(0, 229, 255, 0.7);
+}
+
+.social-handles:nth-child(1) img { animation-delay: 0.2s; }
+.social-handles:nth-child(2) img { animation-delay: 0.4s; }
+.social-handles:nth-child(3) img { animation-delay: 0.6s; }
+.social-handles:nth-child(4) img { animation-delay: 0.8s; }
+.social-handles:nth-child(5) img { animation-delay: 1s; }
+
+.social-handles img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+@keyframes iconFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 @media only screen and (max-width: 600px){
     html, body {
         font-size: 16px;
@@ -611,5 +658,44 @@ html {
     margin-bottom: 20px;
     font-family: 'FuturaDisplay', sans-serif;
 }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-handles img {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: iconFadeIn 1s forwards;
+}
+
+.social-handles:nth-child(1) img { animation-delay: 0.2s; }
+.social-handles:nth-child(2) img { animation-delay: 0.4s; }
+.social-handles:nth-child(3) img { animation-delay: 0.6s; }
+.social-handles:nth-child(4) img { animation-delay: 0.8s; }
+.social-handles:nth-child(5) img { animation-delay: 1s; }
+
+.social-handles img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+@keyframes iconFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 }

@@ -152,10 +152,46 @@
         </section>
 
         <section id="contact" class="section hidden-section">
-            <h2>Contact Me</h2>
-            <p>Email: hassankashif@example.com</p>
-            <p>Phone: +92-321-4392271</p>
-        </section>
+  <div class="contact-heading"><h2>Contact Me</h2></div>
+  <div class="social-icons">
+    
+    <!-- Mobile Number -->
+    <div class="social-handles">
+      <a href="tel:+923214392271" onclick="copyText('+923214392271')" target="_blank">
+        <img src="mobile.png" alt="Contact">
+      </a>
+    </div>
+
+    <!-- Email -->
+    <div class="social-handles">
+      <a href="mailto:hassankashif1459@gmail.com" onclick="copyText('hassankashif1459@gmail.com')" target="_blank">
+        <img src="gmail.png" alt="Gmail">
+      </a>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="social-handles">
+      <a href="https://www.linkedin.com/in/hassan-kashif-03705a348/" onclick="copyText('https://www.linkedin.com/in/hassan-kashif-03705a348/')" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="social-handles">
+      <a href="https://github.com/Hassan285hk" onclick="copyText('https://github.com/Hassan285hk')" target="_blank">
+        <img src="github-sign.png" alt="GitHub">
+      </a>
+    </div>
+<div class="social-handles">
+      <a href="https://wa.me/923214392271" onclick="copyText('https://wa.me/923214392271')" target="_blank">
+        <img src="social.png" alt="Whatsapp">
+      </a>
+</div>
+    
+
+  </div>
+</section>
+
     </main>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -176,6 +212,8 @@
                 });
             });
         });
+
+
 
         document.addEventListener("DOMContentLoaded", function () {
             const skillDetails = document.querySelectorAll(".skill-detail");
@@ -210,6 +248,14 @@
                 observer.observe(section);
             });
         });
+
+         function copyText(text) {
+    navigator.clipboard.writeText(text).then(function () {
+      alert("Copied: " + text);
+    }, function (err) {
+      alert("Failed to copy: ", err);
+    });
+  }
     </script>
 
 </body>
