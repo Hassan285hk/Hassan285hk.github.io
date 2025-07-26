@@ -66,6 +66,57 @@ body {
     gap: 40px;
 }
 
+/* Intro Splash Screen */
+#intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Neon Button */
+#neon-button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  padding: 20px 40px;
+  color: rgb(0, 255, 242);
+  border: 3px solid #0ff;
+  border-radius: 20px;
+  text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  cursor: pointer;
+  animation: neonBlink 0.5s infinite alternate;
+  box-shadow: 0 0 20px rgb(0, 247, 255), 0 0 60px #0ff , 0 0 100px #0ff;
+}
+#neon-button:hover {
+  background: rgb(0, 255, 242);
+    color: black;
+  box-shadow: 0 0 40px rgb(0, 247, 255), 0 0 80px #0ff , 0 0 120px #0ff;
+}
+
+
+@keyframes neonBlink {
+  from {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    opacity: 1;
+  }
+  to {
+    text-shadow: 0 0 2px #0ff, 0 0 5px #0ff;
+    opacity: 0.6;
+  }
+}
+
+/* Hide the main content initially */
+main {
+  display: none;
+}
+
+
 #profilePic img {
     display: block;
     width: 600px;
@@ -447,6 +498,50 @@ html {
         margin-top: -90px;
         max-width: 600px;
     }
+
+    #intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Neon Button */
+#neon-button {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  padding: 20px 40px;
+  color: rgb(0, 255, 242);
+  border: 3px solid #0ff;
+  border-radius: 20px;
+  text-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+  cursor: pointer;
+  animation: neonBlink 0.5s infinite alternate;
+  box-shadow: 0 0 20px rgb(0, 247, 255), 0 0 60px #0ff , 0 0 100px #0ff;
+}
+#neon-button:hover {
+  background: rgb(0, 255, 242);
+    color: black;
+  box-shadow: 0 0 40px rgb(0, 247, 255), 0 0 80px #0ff , 0 0 120px #0ff;
+}
+
+
+@keyframes neonBlink {
+  from {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    opacity: 1;
+  }
+  to {
+    text-shadow: 0 0 2px #0ff, 0 0 5px #0ff;
+    opacity: 0.6;
+  }
+}
 
     #intro {
         margin-left: 0;

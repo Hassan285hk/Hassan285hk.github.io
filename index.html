@@ -19,6 +19,11 @@
         <div class="nav-item"><a href="#contact"><button class="nav-button">Contact</button></a></div>
     </div>
 
+    <div id="intro-screen">
+  <div id="neon-button" onclick="enterPortfolio()">Enter Portfolio</div>
+</div>
+
+
     <main>
         <section id="about" class="section hidden-section">
             <div id="main">
@@ -193,6 +198,11 @@
 
     </main>
     <script>
+function enterPortfolio() {
+  document.getElementById("intro-screen").style.display = "none";
+  document.querySelector("main").style.display = "block";
+}
+
         document.addEventListener("DOMContentLoaded", function () {
             const skillDetails = document.querySelectorAll(".skill-detail");
 
