@@ -82,7 +82,7 @@ body {
 
 /* Neon Button */
 #neon-button {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', cursive;
   font-size: 2rem;
   padding: 20px 40px;
   color: rgb(0, 255, 242);
@@ -514,7 +514,7 @@ html {
 
 /* Neon Button */
 #neon-button {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', cursive;
   font-size: 2rem;
   padding: 20px 40px;
   color: rgb(0, 255, 242);
