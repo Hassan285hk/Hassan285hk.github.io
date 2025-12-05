@@ -694,9 +694,6 @@ html {
             transform: translateY(0);
         }
     }
-
-    @media only screen and (max-width: 768px) {
-
         /* This overrides the desktop grid layout for smaller screens */
         .skills-grid {
             grid-template-columns: repeat(2, 1fr);
