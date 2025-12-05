@@ -302,112 +302,126 @@ html {
     }
 }
 
-.skill-icon {
-    width: 80px;
-    height: 80px;
-    background: transparent;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* ------------------------------------------- */
+/* --- SKILLS SECTION STYLES (EDITED ONLY) --- */
+/* ------------------------------------------- */
+
+#skills {
+    background-color: black;
+    /* Ensure the background color remains consistent if you had other styles for #skills */
+}
+
+#skills h2 {
     font-size: 48px;
-    color: #ffffff;
-    box-shadow: 4px 3px 0 0 #ebebeb44;
-    transition: transform 0.2s;
-    margin: 0 auto;
+    /* Keeping original cursive font, but adding accent color for pop */
+    font-family: cursive; 
+    margin-bottom: 50px; /* Increased margin for better spacing */
+    margin-top: 85px;
+    color: #00ADB5; /* Vibrant accent color */
+    text-shadow: 0 0 10px rgba(0, 173, 181, 0.5); /* Subtle glow effect */
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr); /* Changed to 4 columns for a cleaner desktop layout */
+    gap: 30px;
     width: 100%;
-    max-width: 1000px;
-    margin-top: 100px;
+    max-width: 1200px; /* Increased max width */
+    margin-top: -20px;
 }
 
 .skill-box {
+    /* Revised structure for vertical alignment and attractive card look */
     display: flex;
+    flex-direction: column; /* Stack icon and detail vertically */
     align-items: center;
     justify-content: flex-start;
-    gap: 20px;
-    width: 100%;
-    /* let it grow */
-    position: relative;
-    /* for alignment safety */
+    padding: 20px 15px;
+    background-color: rgba(255, 255, 255, 0.05); /* Frosted/Subtle dark card background */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative; 
+    width: auto; /* Allow box to fill grid space */
 }
 
+.skill-box:hover {
+    background-color: rgba(0, 173, 181, 0.1); /* Subtle color shift on hover */
+    transform: translateY(-5px); /* Lift the box */
+    box-shadow: 0 10px 30px rgba(0, 173, 181, 0.2); /* Enhanced glow effect */
+}
 
 .skill-icon {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    transition: transform 0.2s;
+    width: 70px; /* Consistent size */
+    height: 70px;
+    margin-bottom: 15px;
+    cursor: default;
+    transition: transform 0.3s ease-in-out;
     flex-shrink: 0;
-    /* Prevent icon from shrinking */
 }
 
-/* Updated skill detail */
+.skill-box:hover .skill-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
 .skill-detail {
-    display: none;
+    /* Made details always visible and full width for stability */
+    display: flex; 
     flex-direction: column;
     justify-content: center;
-    width: 250px;
-    animation: fadeInUp 1.2s ease-in-out forwards;
+    width: 100%;
+    animation: none; /* Removed initial fadeInUp for clean integration */
 }
 
-
-
 .skill-name {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    color: white;
-    margin-bottom: 5px;
-    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    text-align: center; /* Center the name */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .skill-bar {
     width: 100%;
-    height: 20px;
-    background: #2c3337;
-    border-radius: 10px;
+    height: 10px; /* Thinner bar for a sleek look */
+    background: #1e1e1e; /* Darker background for contrast */
+    border-radius: 5px;
     overflow: hidden;
+    position: relative;
 }
 
 .skill-fill {
     height: 100%;
-    background: linear-gradient(90deg, #3a3a46, #d6c3c3);
+    /* New Vibrant Gradient */
+    background: linear-gradient(90deg, #00ADB5, #4CAF50);
     width: 0%;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: right;
-    padding-right: 8px;
-    color: black;
-    font-size: 14px;
+    padding-right: 5px;
+    color: white; /* Changed text color to white for contrast */
+    font-size: 10px;
     font-weight: bold;
-    line-height: 20px;
-    transition: width 1.5s ease-in-out;
+    line-height: 10px;
+    transition: width 1.5s cubic-bezier(0.23, 1, 0.32, 1); /* Smoother transition */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* Hover Logic */
-.skill-box:hover .skill-detail {
-    display: flex;
-}
+/* Hover Logic: REMOVED the old JS hover logic from CSS */
 
 
+/* --- MOBILE VIEW SKILLS ADJUSTMENTS (EDITED) --- */
 
-#skills {
-    background-color: black;
-}
+
 
 #contact {
     background-color: black;
 }
 
-#skills h2 {
-    font-size: 48px;
-    font-family: cursive;
-    margin-top: -10px;
-}
 
 #contact h2 {
     font-size: 48px;
@@ -639,114 +653,30 @@ html {
     }
 }
 
-.skill-icon {
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: #ffffff;
-    box-shadow: 4px 3px 0 0 #ebebeb44;
-    transition: transform 0.2s;
-    margin: 0 auto;
-}
+@media only screen and (max-width: 768px) {
+    /* This overrides the desktop grid layout for smaller screens */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        gap: 20px;
+        max-width: 90%;
+    }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 100vw;
-    margin-top: 10px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-.skill-box {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    width: 100%;
-    /* let it grow */
-    position: relative;
-    /* for alignment safety */
-}
-
-
-.skill-icon {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: transform 0.2s;
-    flex-shrink: 0;
-    /* Prevent icon from shrinking */
-}
-
-/* Updated skill detail */
-.skill-detail {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    width: 250px;
-    animation: fadeInUp 1.2s ease-in-out forwards;
-}
-
-
-
-.skill-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-.skill-bar {
-    width: 100%;
-    height: 20px;
-    background: #2c3337;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.skill-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #3a3a46, #d6c3c3);
-    width: 0%;
-    border-radius: 10px;
-    text-align: right;
-    padding-right: 8px;
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 20px;
-    transition: width 1.5s ease-in-out;
-}
-
-/* Hover Logic */
-.skill-box:hover .skill-detail {
-    display: flex;
-}
-
-
-
-#skills {
-    background-color: black;
+    /* Adjusting icon size for mobile */
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Adjusting name font size for mobile */
+    .skill-name {
+        font-size: 14px;
+    }
 }
 
 #contact {
     background-color: black;
 }
 
-#skills h2 {
-    font-size: 48px;
-    font-family: cursive;
-    margin-top: -10px;
-}
 
 #contact h2 {
     font-size: 48px;
