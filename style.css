@@ -437,9 +437,11 @@ html {
 
 #projects {
     background-color: #111111;
-    padding: 80px 0; /* Reduced vertical padding, removed horizontal padding */
+    padding: 80px 0;
+    /* Reduced vertical padding, removed horizontal padding */
     height: auto;
-    overflow: hidden; /* Ensure the section doesn't expand due to the animation */
+    overflow: hidden;
+    /* Ensure the section doesn't expand due to the animation */
 }
 
 #projects h2 {
@@ -452,27 +454,35 @@ html {
 
 .scrolling-projects-container {
     width: 100%;
-    overflow: hidden; /* Hides the content outside the visible area */
-    white-space: nowrap; /* Forces content onto a single line */
+    overflow: hidden;
+    /* Hides the content outside the visible area */
+    white-space: nowrap;
+    /* Forces content onto a single line */
 }
 
 .scroll-track {
-    display: inline-flex; /* Use inline-flex to display all cards on one line */
-    animation: auto-scroll 10s linear infinite; /* Animation runs continuously */
+    display: inline-flex;
+    /* Use inline-flex to display all cards on one line */
+    animation: auto-scroll 10s linear infinite;
+    /* Animation runs continuously */
     padding: 10px 0;
 }
 
 .scroll-track:hover {
-    animation-play-state: paused; /* Pause scrolling on hover */
+    animation-play-state: paused;
+    /* Pause scrolling on hover */
 }
 
 .project-card {
     /* Define card layout */
-    flex-shrink: 0; /* Important: Prevents cards from shrinking */
-    width: 350px; /* Fixed width for each card */
+    flex-shrink: 0;
+    /* Important: Prevents cards from shrinking */
+    width: 350px;
+    /* Fixed width for each card */
     height: 250px;
-    margin-right: 30px; /* Spacing between cards */
-    
+    margin-right: 30px;
+    /* Spacing between cards */
+
     /* Aesthetics from previous version */
     background-color: #222222;
     border-radius: 10px;
@@ -484,7 +494,7 @@ html {
 }
 
 .project-card:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .project-image {
@@ -532,10 +542,11 @@ html {
     0% {
         transform: translateX(0);
     }
+
     100% {
         /* Translate X by half the width of the track to create a perfect loop */
         /* Since you repeated the cards, this creates a seamless loop */
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
     }
 }
 
@@ -796,33 +807,35 @@ html {
             transform: translateY(0);
         }
     }
-        /* This overrides the desktop grid layout for smaller screens */
-        .skills-grid {
-            grid-template-columns: repeat(2, 1fr);
-            /* Two columns on smaller screens */
-            gap: 20px;
-            max-width: 90%;
-        }
 
-        /* Adjusting icon size for mobile */
-        .skill-icon {
-            width: 50px;
-            height: 50px;
-        }
+    /* This overrides the desktop grid layout for smaller screens */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on smaller screens */
+        gap: 20px;
+        max-width: 90%;
+    }
 
-        /* Adjusting name font size for mobile */
-        .skill-name {
-            font-size: 14px;
-        }
-    
-     .project-card {
-        width: 250px; 
+    /* Adjusting icon size for mobile */
+    .skill-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Adjusting name font size for mobile */
+    .skill-name {
+        font-size: 14px;
+    }
+
+    .project-card {
+        width: 250px;
         height: 200px;
         margin-right: 20px;
     }
 
     .scroll-track {
-        animation: auto-scroll 30s linear infinite; /* Faster scroll on mobile */
+        animation: auto-scroll 30s linear infinite;
+        /* Faster scroll on mobile */
     }
 
     #contact {
