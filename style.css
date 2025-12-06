@@ -320,7 +320,7 @@ html {
     margin-bottom: 50px;
     /* Increased margin for better spacing */
     margin-top: 85px;
-    color: #00ADB5;
+    color: #ffffff;
     /* Vibrant accent color */
     text-shadow: 0 0 10px rgba(0, 173, 181, 0.5);
     /* Subtle glow effect */
@@ -445,7 +445,7 @@ html {
 #projects h2 {
     font-size: 48px;
     font-family: 'FuturaDisplay', sans-serif;
-    color: #00ADB5;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -458,7 +458,7 @@ html {
 
 .scroll-track {
     display: inline-flex; /* Use inline-flex to display all cards on one line */
-    animation: auto-scroll 40s linear infinite; /* Animation runs continuously */
+    animation: auto-scroll 10s linear infinite; /* Animation runs continuously */
     padding: 10px 0;
 }
 
