@@ -1,337 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HK</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hassan Kashif — AI Engineer, Flutter & Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Hassan Kashif — AI Engineer, Flutter Developer, Full-Stack Developer and Graphic Designer. Explore projects, skills and experience." />
+<meta name="keywords" content="Hassan Kashif, AI Engineer, Flutter Developer, Full Stack Developer, Graphic Designer, Portfolio" />
+<meta name="author" content="Hassan Kashif" />
+<link rel="canonical" href="https://hassan285hk.github.io/" />
 
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hassan Kashif — AI Engineer, Flutter & Full-Stack Developer" />
+<meta property="og:description" content="AI Engineer, Flutter Developer, Full-Stack Developer and Graphic Designer — explore my work." />
+<meta property="og:url" content="https://hassan285hk.github.io/" />
+<meta property="og:image" content="https://hassan285hk.github.io/logo.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="./logo.png" />
+<meta name="theme-color" content="#05060a" />
+
+<!-- Preconnects for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://api.github.com" />
+<link rel="preconnect" href="https://cdn.simpleicons.org" />
+
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
 <body>
-    <div id="navbar">
-        <div id="logo">
-            <img src="logo.png" alt="HK" height="50" width="90">
-        </div>
-        <div class="nav-item"><a href="#about"><button class="nav-button">About</button></a></div>
-      <div class="nav-item"><a href="#skills"><button class="nav-button">Skills</button></a></div>
-<div class="nav-item"><a href="#projects"><button class="nav-button">Projects</button></a></div> 
-<div class="nav-item"><a href="#contact"><button class="nav-button">Contact</button></a></div>
-    </div>
 
-    <div id="intro-screen">
-  <div id="neon-button" onclick="enterPortfolio()">Enter Portfolio</div>
+<!-- Skip link for keyboard/screen-reader users -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Loading screen -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">HK</div>
+  <div class="loader-bar"><span></span></div>
 </div>
 
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
-    <main>
-        <section id="about" class="section hidden-section">
-            <div id="main">
-                <div id="profilePic">
-                    <img src="robotics1.jpg" alt="profilePic" height="700" width="600">
-                </div>
-                <div id="intro">
-                    <h2>Hi! I am</h2>
-                    <h1>Hassan Kashif</h1>
-                    <p>Creative, innovative Front-End Developer as well as Graphic Designer.</p>
-                    <p><i>Blending code with creativity — I design sleek interfaces and develop responsive front-end solutions that deliver style and performance.</i></p>
-                </div>
-            </div>
-        </section>
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-        <section id="skills" class="section hidden-section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-box">
-                    <img src="html.png" alt="HTML" class="skill-icon">
-                    <div class="skill-detail" data-percent="90">
-                        <div class="skill-name">HTML</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="css-3.png" alt="CSS" class="skill-icon">
-                    <div class="skill-detail" data-percent="85">
-                        <div class="skill-name">CSS</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="js.png" alt="JavaScript" class="skill-icon">
-                    <div class="skill-detail" data-percent="50">
-                        <div class="skill-name">JavaScript</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="illustrator.png" alt="Illustrator" class="skill-icon">
-                    <div class="skill-detail" data-percent="95">
-                        <div class="skill-name">Illustrator</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="photoshop.png" alt="Photoshop" class="skill-icon">
-                    <div class="skill-detail" data-percent="70">
-                        <div class="skill-name">Photoshop</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="Canva-Logo-Design-Platform-Icon-removebg-preview.png" alt="Canva" class="skill-icon">
-                    <div class="skill-detail" data-percent="80">
-                        <div class="skill-name">Canva</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="corel.png" alt="Corel Draw" class="skill-icon">
-                    <div class="skill-detail" data-percent="95">
-                        <div class="skill-name">Corel</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="c-.png" alt="C++" class="skill-icon">
-                    <div class="skill-detail" data-percent="95">
-                        <div class="skill-name">C++</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="sql-file.png" alt="SQL" class="skill-icon">
-                    <div class="skill-detail" data-percent="80">
-                        <div class="skill-name">SQL</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="Arduino_IDE_logo.svg-removebg-preview.png" alt="Arduino" class="skill-icon">
-                    <div class="skill-detail" data-percent="50">
-                        <div class="skill-name">Arduino</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-box">
-                    <img src="robotics-innovation-a-friendly-robot-mascot-symbolizing-advanced-technology-and-automation-in-a-modern-world-vector-removebg-preview.png"
-                        alt="Robotics" class="skill-icon">
-                    <div class="skill-detail" data-percent="70">
-                        <div class="skill-name">Robotics</div>
-                        <div class="skill-bar">
-                            <div class="skill-fill"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        </section>
-
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    
-    <div class="scrolling-projects-container">
-        
-        <div class="scroll-track">
-            
-            <div class="project-card">
-                <img src="sports-game-logo-260nw-698317408.webp" alt="Logo Design" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">NNational Sports Logo</h3>
-                    <p>High-impact typography and visual layout.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="Blue Red and White Modern Delivery Logo.png" alt="Poster Design" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Event Promotion Poster</h3>
-                    <p>High-impact typography and visual layout.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="JUST.png" alt="UI/UX Mockup" class="project-image" height="250px" width="350px">
-                <div class="project-overlay">
-                    <h3 class="project-title">NIKE AD</h3>
-                    <p>Modern AD of NIKE Shoes with High-impact Layout.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="JUST (1).png" alt="Logo Design" class="project-image" height="250px" width="350px">
-                <div class="project-overlay">
-                    <h3 class="project-title">Watch Ad </h3>
-                    <p>Modern geometric AD and branding guide.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="Black minimalist architect logo.png" alt="Poster Design" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Event Promotion Poster</h3>
-                    <p>High-impact typography and visual layout.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="Aura.png" alt="UI/UX Mockup" class="project-image">
-                <div class="project-overlay">
-                    <h3 class="project-title">Ad</h3>
-                    <p>Dark mode interface design mock-up.</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="section hidden-section">
-...
-
-        <section id="contact" class="section hidden-section">
-  <div class="contact-heading"><h2>Contact Me !</h2></div>
-  <div class="social-icons">
-    
-    <!-- Mobile Number -->
-    <div class="social-handles">
-      <a href="tel:+923214392271" onclick="copyText('+923214392271')" target="_blank">
-        <img src="mobile.png" alt="Contact">
-      </a>
-    </div>
-
-    <!-- Email -->
-    <div class="social-handles">
-      <a href="mailto:hassankashif1459@gmail.com" onclick="copyText('hassankashif1459@gmail.com')" target="_blank">
-        <img src="gmail.png" alt="Gmail">
-      </a>
-    </div>
-
-    <!-- LinkedIn -->
-    <div class="social-handles">
-      <a href="https://www.linkedin.com/in/hassan-kashif-03705a348/" onclick="copyText('https://www.linkedin.com/in/hassan-kashif-03705a348/')" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn">
-      </a>
-    </div>
-
-    <!-- GitHub -->
-    <div class="social-handles">
-      <a href="https://github.com/Hassan285hk" onclick="copyText('https://github.com/Hassan285hk')" target="_blank">
-        <img src="github-sign.png" alt="GitHub">
-      </a>
-    </div>
-<div class="social-handles">
-      <a href="https://wa.me/923214392271" onclick="copyText('https://wa.me/923214392271')" target="_blank">
-        <img src="social.png" alt="Whatsapp">
-      </a>
-</div>
-    
-
+<!-- Command palette -->
+<div class="palette-overlay" id="paletteOverlay" role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="palette">
+    <input type="text" id="paletteInput" placeholder="Type a command… (e.g. projects, github, theme)" autocomplete="off" />
+    <ul id="paletteResults"></ul>
+    <div class="palette-hint">Esc to close · ↑↓ to navigate · Enter to select</div>
   </div>
-</section>
+</div>
 
-    </main>
-    <script>
-function enterPortfolio() {
-  document.getElementById("intro-screen").style.display = "none";
-  document.querySelector("main").style.display = "block";
-}
+<!-- Neural mesh background canvas (signature element) -->
+<canvas id="meshCanvas" aria-hidden="true"></canvas>
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const skillDetails = document.querySelectorAll(".skill-detail");
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <nav class="nav-inner" aria-label="Primary">
+    <a href="#home" class="brand">HK<span class="brand-dot">.</span></a>
 
-            skillDetails.forEach(detail => {
-                const fill = detail.querySelector(".skill-fill");
-                const percent = parseInt(detail.getAttribute("data-percent"));
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#certificates" class="nav-link" data-section="certificates">Certificates</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
 
-                detail.parentElement.addEventListener("mouseenter", () => {
-                    fill.style.width = percent + "%";
-                    fill.textContent = percent + "%";
-                });
+    <div class="nav-actions">
+      <button class="icon-btn" id="paletteBtn" title="Command palette (Ctrl+K)" aria-label="Open command palette">⌘K</button>
+      <button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle light/dark theme">
+        <svg id="themeIconMoon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
 
-                detail.parentElement.addEventListener("mouseleave", () => {
-                    fill.style.width = "0%";
-                    fill.textContent = "";
-                });
-            });
-        });
+<main id="main">
 
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal" style="transition-delay:.05s">Hassan Kashif</h1>
+      <p class="hero-role reveal" style="transition-delay:.1s">
+        <span id="typedRole">AI Engineer</span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc reveal" style="transition-delay:.15s">
+        I build intelligent, well-crafted software — from machine-learning models and
+        cross-platform Flutter apps to full-stack web products — and back it with
+        design that actually looks like it belongs in 2026.
+      </p>
 
+      <div class="hero-ctas reveal" style="transition-delay:.2s">
+        <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
+        <a href="./resume.pdf" class="btn btn-glass magnetic" download>Resume</a>
+        <a href="https://github.com/Hassan285hk" target="_blank" rel="noopener" class="btn btn-glass magnetic">GitHub</a>
+        <a href="https://www.linkedin.com/in/hassan-kashif-03705a348/" target="_blank" rel="noopener" class="btn btn-glass magnetic">LinkedIn</a>
+        <a href="#contact" class="btn btn-glass magnetic">Contact</a>
+      </div>
+    </div>
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const skillDetails = document.querySelectorAll(".skill-detail");
-            skillDetails.forEach(detail => {
-                const fill = detail.querySelector(".skill-fill");
-                const percent = parseInt(detail.getAttribute("data-percent"));
-                detail.parentElement.addEventListener("mouseenter", () => {
-                    fill.style.width = percent + "%";
-                    fill.textContent = percent + "%";
-                });
-                detail.parentElement.addEventListener("mouseleave", () => {
-                    fill.style.width = "0%";
-                    fill.textContent = "";
-                });
-            });
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
 
-            const sections = document.querySelectorAll(".hidden-section");
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="section-inner about-grid">
+      <div class="about-media reveal">
+        <div class="about-photo-frame">
+          <img src="./robotics1.jpg" alt="Hassan Kashif" loading="lazy" width="420" height="420" />
+        </div>
+      </div>
 
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("show-section");
-                    } else {
-                        entry.target.classList.remove("show-section");
-                    }
-                });
-            }, {
-                threshold: 0.2
-            });
+      <div class="about-content">
+        <p class="eyebrow reveal">About Me</p>
+        <h2 class="section-title reveal">Engineering meets design.</h2>
+        <p class="about-bio reveal">
+          I'm a creative, detail-obsessed developer working across
+          <strong>AI/ML</strong>, <strong>Flutter</strong>, <strong>full-stack web</strong>
+          and <strong>graphic design</strong>. I like products that are equal parts
+          functional and beautiful — code that performs, and interfaces that feel
+          considered down to the last pixel.
+        </p>
+        <p class="about-bio reveal">
+          Outside of shipping projects, I'm constantly exploring new tools —
+          from training small ML models to designing brand identities — because
+          I think the best engineers stay curious across disciplines.
+        </p>
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
+        <div class="stats-grid reveal" id="statsGrid"></div>
 
-         function copyText(text) {
-    navigator.clipboard.writeText(text).then(function () {
-      alert("Copied: " + text);
-    }, function (err) {
-      alert("Failed to copy: ", err);
-    });
-  }
-    </script>
+        <a href="#experience" class="btn btn-outline reveal">See Full Timeline →</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">What I Work With</p>
+      <h2 class="section-title reveal center">Skills &amp; Tools</h2>
+      <p class="section-sub reveal center">A working toolkit across AI, mobile, web and design.</p>
+
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">Selected Work</p>
+      <h2 class="section-title reveal center">Projects</h2>
+      <p class="section-sub reveal center">Code projects pulled live from GitHub, plus featured design work.</p>
+
+      <div class="tabs reveal" role="tablist" aria-label="Project categories">
+        <button class="tab active" data-tab="code" role="tab" aria-selected="true">Code Projects</button>
+        <button class="tab" data-tab="design" role="tab" aria-selected="false">Design Work</button>
+      </div>
+
+      <div class="tab-panel active" id="panel-code" role="tabpanel">
+        <div class="projects-grid" id="codeProjectsGrid">
+          <p class="loading-text">Loading latest repositories from GitHub…</p>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-design" role="tabpanel" hidden>
+        <div class="projects-grid" id="designProjectsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GITHUB STATS ================= -->
+  <section class="section section-alt" id="githubStats">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">Open Source Activity</p>
+      <h2 class="section-title reveal center">GitHub Stats</h2>
+      <div class="gh-stats-grid reveal" id="ghStatsGrid"></div>
+      <div class="gh-contrib-wrap reveal">
+        <img id="ghContribGraph" alt="GitHub contribution graph for Hassan285hk" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE / TIMELINE ================= -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">Journey</p>
+      <h2 class="section-title reveal center">Experience &amp; Education</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATES ================= -->
+  <section id="certificates" class="section section-alt">
+    <div class="section-inner">
+      <p class="eyebrow reveal center">Credentials</p>
+      <h2 class="section-title reveal center">Certificates</h2>
+      <div class="cert-grid" id="certGrid"></div>
+    </div>
+  </section>
+
+  <!-- Certificate modal -->
+  <div class="modal-overlay" id="certModal" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <div class="modal">
+      <button class="modal-close" id="certModalClose" aria-label="Close">✕</button>
+      <div class="modal-body" id="certModalBody"></div>
+    </div>
+  </div>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <div class="section-inner contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="section-sub" style="text-align:left;margin:0 0 28px">
+          Have a project, a role, or just want to talk AI and design? My inbox is open.
+        </p>
+
+        <button class="email-copy" id="copyEmailBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>
+          <span id="emailText">hassankashif1459@gmail.com</span>
+          <span class="copy-flag" id="copyFlag">Copied!</span>
+        </button>
+
+        <div class="social-row">
+          <a href="https://github.com/Hassan285hk" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><img src="https://cdn.simpleicons.org/github/e6e8ef" alt="" width="20" height="20"/></a>
+          <a href="https://www.linkedin.com/in/hassan-kashif-03705a348/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/e6e8ef" alt="" width="20" height="20"/></a>
+          <a href="https://wa.me/923214392271" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><img src="https://cdn.simpleicons.org/whatsapp/e6e8ef" alt="" width="20" height="20"/></a>
+          <a href="tel:+923214392271" class="social-icon" aria-label="Phone"><img src="https://cdn.simpleicons.org/googlephone/e6e8ef" alt="" width="20" height="20"/></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="fName">Name</label>
+          <input type="text" id="fName" name="name" required minlength="2" />
+          <span class="form-error" data-for="fName"></span>
+        </div>
+        <div class="form-row">
+          <label for="fEmail">Email</label>
+          <input type="email" id="fEmail" name="email" required />
+          <span class="form-error" data-for="fEmail"></span>
+        </div>
+        <div class="form-row">
+          <label for="fMsg">Message</label>
+          <textarea id="fMsg" name="message" rows="5" required minlength="10"></textarea>
+          <span class="form-error" data-for="fMsg"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+        <p class="form-success" id="formSuccess" role="status">✓ Message sent — I'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-divider" aria-hidden="true"></div>
+  <div class="footer-inner">
+    <p>© <span id="year"></span> Hassan Kashif. Built with care, caffeine, and a bit of glow.</p>
+    <div class="social-row">
+      <a href="https://github.com/Hassan285hk" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><img src="https://cdn.simpleicons.org/github/8a90a3" alt="" width="16" height="16"/></a>
+      <a href="https://www.linkedin.com/in/hassan-kashif-03705a348/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/8a90a3" alt="" width="16" height="16"/></a>
+      <a href="mailto:hassankashif1459@gmail.com" class="social-icon" aria-label="Email"><img src="https://cdn.simpleicons.org/gmail/8a90a3" alt="" width="16" height="16"/></a>
+    </div>
+  </div>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+</footer>
+
+<canvas id="confettiCanvas" aria-hidden="true"></canvas>
+
+<script src="./assets/js/data.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
-
 </html>
