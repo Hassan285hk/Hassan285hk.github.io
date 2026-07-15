@@ -81,10 +81,10 @@ const DESIGN_PROJECTS = [
 const TIMELINE = [
   {
     year: "2026",
-    title: "Add your current role",
-    org: "Company / Organization",
+    title: "Junior Graphic Designer",
+    org: "MK Furnitures & Studio",
     type: "work",
-    desc: "Short description of your responsibilities and impact — replace this placeholder with your real experience.",
+    desc: "Developed creative designs for social media, advertisements, and print materials, ensuring high-quality visuals and timely project delivery.",
   },
   {
     year: "2025",
@@ -94,32 +94,32 @@ const TIMELINE = [
     desc: "Designed brand identities, posters and ad layouts while building responsive front-end interfaces.",
   },
   {
-    year: "2024",
-    title: "Add your degree / program",
-    org: "Your University / Institute",
-    type: "education",
-    desc: "Replace with your real field of study and key coursework (e.g. AI, Data Structures, Software Engineering).",
+    year: "2023",
+    title: "Bachelor of Science in Computer Science",
+    org: "Lahore Garrison University",
+    type: "BSCS",
+    desc: "AI, Data Structures, Software Engineering",
   },
 ];
 
 // ---- CERTIFICATES (sample — replace with your real ones) -------
 const CERTIFICATES = [
   {
-    title: "Add your certificate title",
-    issuer: "Issuing platform (Coursera, Google, etc.)",
+    title: "Flutter App Development",
+    issuer: "Udemy",
     date: "2026",
     img: null, // add an image path once you have the certificate file
   },
   {
-    title: "Add your certificate title",
-    issuer: "Issuing platform",
-    date: "2026",
+    title: "Python for AI",
+    issuer: "DeepEmbed Labs",
+    date: "2025",
     img: null,
   },
   {
-    title: "Add your certificate title",
-    issuer: "Issuing platform",
-    date: "2026",
+    title: "Graphic Design",
+    issuer: "Brain Group of Colleges",
+    date: "2024",
     img: null,
   },
 ];
